@@ -6,7 +6,7 @@ import Enzyme, { shallow } from 'enzyme'
 // Component
 import { User } from './User'
 
-describe('User', () => {
+describe('Components > User', () => {
   const user = shallow(<User />)
 
   it('should render correctly', () => {

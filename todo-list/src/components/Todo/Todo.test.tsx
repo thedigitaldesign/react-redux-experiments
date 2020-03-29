@@ -6,7 +6,7 @@ import { shallow } from 'enzyme'
 // Component
 import { Todo } from './Todo'
 
-describe('Todo', () => {
+describe('Components > Todo', () => {
   const todo = shallow(<Todo />)
 
   it('should render correctly', () => {
