@@ -2,9 +2,9 @@
 import * as enzyme from 'enzyme'
 
 // Reducer
-import TodoListReducer from './reducer'
+import TodoReducer from './reducer'
 
-describe('Todo List Reducer', () => {
+describe('Todo Reducer', () => {
   it('should reduce stuff', () => {
     
   });

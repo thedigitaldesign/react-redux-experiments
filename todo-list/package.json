@@ -57,9 +57,7 @@
   },
   "jest": {
     "collectCoverageFrom": [
-      "!src/index.tsx",
-      "!src/serviceWorker.ts",
-      "!src/tempPolyfills.js"
+      "!src/index.tsx"
     ]
   }
 }
