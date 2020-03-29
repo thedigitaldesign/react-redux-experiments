@@ -1,4 +1,8 @@
 // Todo List
-export const Todo = {
-  
+export const TodoListTypes = {
+  TODO_LIST: 'TODO_LIST'
+}
+
+export const TodoItemTypes = {
+  TODO_ITEM: 'TODO_ITEM'
 }
