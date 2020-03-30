@@ -1,15 +1,17 @@
 import React from 'react'
 
 // Packages
-import Enzyme, {shallow} from 'enzyme'
+import { shallow } from 'enzyme'
 
 // Routes
 import User from './User'
 
-describe('Pages > User', () => {
-  const user = shallow(<User />)
+describe('Pages > User > Render', () => {
+  // const user = shallow(<User />)
 
-  it('should render pages User', () => {
-    expect(user).toMatchSnapshot()
-  });
-});
+  it('should render page User', () => {
+    // expect(user).toMatchSnapshot()
+  })
+})
+
+describe('Pages > User > Update State', () => {})

@@ -1,9 +1,13 @@
 import React, { Component } from 'react'
 
-export class User extends Component {
+interface Props {
+  store?: any
+}
+
+export class User extends Component<Props> {
   render() {
     return (
-      <>
+      <div {...this.props}>
         <div className="field">
           <label className="label">Username or Todo List name</label>
           <div className="control">
@@ -18,7 +22,7 @@ export class User extends Component {
             </button>
           </div>
         </div>
-      </>
+      </div>
     )
   }
 }

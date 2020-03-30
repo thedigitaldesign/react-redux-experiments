@@ -1,23 +1,43 @@
 import React from 'react'
 
 // Packages
-import Enzyme, { shallow } from 'enzyme'
+import { shallow } from 'enzyme'
+
+// Utils
+import { findByTestAttribute, storeFactory } from '../../test/testUtils'
 
 // Component
 import { User } from './User'
 
+const setup = (initialState: any = {}) => {
+  const store = storeFactory(initialState)
+  const wrapper = shallow(<User store={store} />)
+  
+  console.log('testing-----')
+  console.log(wrapper)
+
+  return wrapper
+}
+
+
+
 describe('Components > User', () => {
-  const user = shallow(<User />)
+  const foo = setup()
 
-  it('should render correctly', () => {
-    expect(user).toMatchSnapshot()
-  })
+  it('should ', () => {
+    
+  });
+  // const user = shallow(<User />)
 
-  describe('when typing into the user input', () => {
-    const username = 'hello_world'
+  // it('should render correctly', () => {
+  //   expect(user).toMatchSnapshot()
+  // })
 
-    beforeEach(() => {
-      user.find('.user-input').simulate('change', { target: { value: username } })
-    })
-  })
+  // describe('when typing into the user input', () => {
+  //   const username = 'Dwight K. Schrute'
+
+  //   beforeEach(() => {
+  //     user.find('.user-input').simulate('change', { target: { value: username } })
+  //   })
+  // })
 })

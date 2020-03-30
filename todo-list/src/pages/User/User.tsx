@@ -1,16 +1,27 @@
 import React, { Component } from 'react'
 
 // Packages
+import { connect } from 'react-redux'
 
 // Components
 import { User as UserComponent } from '../../components'
 
-export default class User extends Component {
+class User extends Component {
   render() {
     return (
       <>
-        <UserComponent />
+        <UserComponent store={this.props} />
       </>
     )
   }
 }
+
+const mapStateToProps = (state: any) => {
+
+}
+
+const mapDispatchToProps = (dispatch: any) => {
+  return
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(User)
