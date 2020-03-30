@@ -6,3 +6,7 @@ export const TodoListTypes = {
 export const TodoItemTypes = {
   TODO_ITEM: 'TODO_ITEM'
 }
+
+export const UsernameTypes = {
+  USERNAME: 'USERNAME'
+}

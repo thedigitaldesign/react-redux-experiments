@@ -1,8 +1,5 @@
-// Packages
-import Enzyme from 'enzyme'
-
 // Models
-import { Todo } from '../../models'
+import { TodoModel } from '../../models'
 
 // Components
 import * as action from './action'
@@ -12,7 +9,7 @@ import * as type from '../types'
 
 
 describe('Todo Action', () => {
-  const todoItem: Todo = {
+  const todoItem: TodoModel = {
     id: 1,
     title: 'Make more tests',
     description: 'More tests are needed',

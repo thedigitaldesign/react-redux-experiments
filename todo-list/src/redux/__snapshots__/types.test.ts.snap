@@ -1,3 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Dispatch Types List should contain dispatch types for \`Todo\` 1`] = `undefined`;
+exports[`Dispatch Types List should contain dispatch types for \`TODO_ITEM\` 1`] = `
+Object {
+  "TODO_ITEM": "TODO_ITEM",
+}
+`;
+
+exports[`Dispatch Types List should contain dispatch types for \`TODO_LIST\` 1`] = `
+Object {
+  "TODO_LIST": "TODO_LIST",
+}
+`;
+
+exports[`Dispatch Types List should contain dispatch types for \`USERNAME\` 1`] = `
+Object {
+  "USERNAME": "USERNAME",
+}
+`;

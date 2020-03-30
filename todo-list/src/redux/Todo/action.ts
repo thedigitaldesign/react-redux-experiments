@@ -1,10 +1,10 @@
 // Models
-import { Todo } from '../../models/Todo'
+import { TodoModel } from '../../models/TodoModel'
 
 // Types
 import * as type from '../types'
 
-export const AddTodoItem = (item: Todo) => {
+export const AddTodoItem = (item: TodoModel) => {
   return {
     type: type.TodoItemTypes.TODO_ITEM,
     payload: item,

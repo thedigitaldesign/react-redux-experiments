@@ -1,6 +1,3 @@
-// Packages
-import * as enzyme from 'enzyme'
-
 // Reducer
 import TodoReducer from './reducer'
 

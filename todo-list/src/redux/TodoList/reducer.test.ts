@@ -1,8 +1,5 @@
-// Packages
-import * as enzyme from 'enzyme'
-
 // Models
-import { Todo } from '../../models'
+import { TodoListModel } from '../../models'
 
 // Types
 import * as type from '../types'
@@ -11,10 +8,14 @@ import * as type from '../types'
 import TodoListReducer from './reducer'
 
 describe('Todo List Reducer', () => {
-  const todoItem: Todo = {
-    id: 1,
-    title: 'Make more tests',
-    description: 'More tests are needed',
+  const todoList: TodoListModel = {
+    list: [
+      {
+        id: 1,
+        title: 'Make more tests',
+        description: 'More tests are needed',
+      },
+    ],
   }
 
   it('should return default initial state when no action is passed', () => {
@@ -22,14 +23,14 @@ describe('Todo List Reducer', () => {
       type: type.TodoListTypes.TODO_LIST,
       payload: null,
     })
-    expect(newState).toEqual(null)
+    expect(newState).toEqual(undefined)
   })
 
   it('should return list upon receiving an action of type `TODO_LIST`', () => {
     const newState = TodoListReducer(null, {
       type: type.TodoListTypes.TODO_LIST,
-      payload: [todoItem]
+      payload: todoList,
     })
-    expect(newState).toEqual([todoItem])
+    expect(newState).toEqual(todoList.list)
   })
 })
